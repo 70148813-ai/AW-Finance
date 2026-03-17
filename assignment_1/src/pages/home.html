@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AW Finance - Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      --bg: #1C1917;
+      --surface: #262626;
+      --gold: #D4A574;
+      --text: #FAFAF9;
+      --muted: #A8A29E;
+      --border: #374151;
+    }
+    body { background: #1C1917; color: #FAFAF9; }
+    .btn-primary { background: #D4A574; color: #1C1917; }
+    .btn-primary:hover { background: #c49460; }
+    .btn-secondary { background: #262626; color: #FAFAF9; border: 1px solid #D4A574; }
+    .btn-secondary:hover { background: #2e2e2e; }
+    .gold { color: #D4A574; }
+    .surface { background: #262626; }
+    .border-gold { border-color: #D4A574; }
+  </style>
+</head>
+<body style="background:#1C1917; color:#FAFAF9; font-family:sans-serif;">
+
+  <!-- NAVBAR -->
+  <nav style="background:#262626; border-bottom:1px solid #374151;" class="sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="home.html" style="color:#D4A574;" class="text-lg font-bold tracking-tight">AW Finance</a>
+      <div class="hidden md:flex items-center gap-8 text-sm" style="color:#A8A29E;">
+        <a href="home.html" style="color:#D4A574;" class="font-medium">Home</a>
+        <a href="about.html" class="hover:text-white transition" style="color:#A8A29E;">About</a>
+        <a href="contact.html" class="hover:text-white transition" style="color:#A8A29E;">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="signin.html" class="text-sm transition" style="color:#A8A29E;">Sign In</a>
+        <a href="signup.html" class="text-sm font-medium px-4 py-2 rounded-lg transition" style="background:#D4A574; color:#1C1917;">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="background:#262626; border-bottom:1px solid #374151;" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style="color:#D4A574; background:#1C1917; border:1px solid #D4A574;">Trusted by 50,000+ learners</span>
+      <h1 class="mt-6 text-4xl md:text-5xl font-bold leading-tight" style="color:#FAFAF9;">Master Finance Skills Online</h1>
+      <p class="mt-4 text-lg max-w-xl mx-auto" style="color:#A8A29E;">Expert-led courses in investment banking, financial analysis, and more. Learn at your own pace.</p>
+      <div class="mt-8 flex justify-center gap-4 flex-wrap">
+        <a href="signup.html" class="px-6 py-3 rounded-lg text-sm font-medium transition" style="background:#D4A574; color:#1C1917;">Get Started Free</a>
+        <a href="about.html" class="px-6 py-3 rounded-lg text-sm font-medium transition" style="background:#262626; color:#FAFAF9; border:1px solid #D4A574;">Learn More</a>
+      </div>
+      <div class="mt-12 flex justify-center gap-12">
+        <div><p class="text-2xl font-bold" style="color:#D4A574;">200+</p><p class="text-sm" style="color:#A8A29E;">Courses</p></div>
+        <div><p class="text-2xl font-bold" style="color:#D4A574;">50K+</p><p class="text-sm" style="color:#A8A29E;">Students</p></div>
+        <div><p class="text-2xl font-bold" style="color:#D4A574;">98%</p><p class="text-sm" style="color:#A8A29E;">Satisfaction</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section style="background:#1C1917; border-bottom:1px solid #374151;" class="py-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-6" style="color:#A8A29E;">Trusted by professionals from</p>
+      <div class="flex flex-wrap justify-center gap-10 font-bold text-base" style="color:#374151;">
+        <span>Goldman Sachs</span><span>JP Morgan</span><span>Deloitte</span><span>McKinsey</span><span>KPMG</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="py-20" style="background:#1C1917;">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2" style="color:#D4A574;">Courses</p>
+      <h2 class="text-2xl font-bold mb-10" style="color:#FAFAF9;">Most Popular Courses</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="rounded-xl p-6 transition hover:border-yellow-600" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Financial Analysis</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Analyze financial statements and make data-driven decisions.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>8 modules</span><span class="font-semibold" style="color:#D4A574;">$39</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6 transition" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Investment Banking</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Master valuation, M&amp;A, and capital markets from industry veterans.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>14 modules</span><span class="font-semibold" style="color:#D4A574;">$79</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6 transition" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Stock Market Fundamentals</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Understand equities, bonds, and portfolio management strategies.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>10 modules</span><span class="font-semibold" style="color:#D4A574;">$49</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6 transition" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Corporate Finance</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Learn capital structure, budgeting, and corporate valuation.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>12 modules</span><span class="font-semibold" style="color:#D4A574;">$59</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6 transition" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Risk Management</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Identify, assess, and mitigate financial risks effectively.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>9 modules</span><span class="font-semibold" style="color:#D4A574;">$45</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6 transition" style="background:#262626; border:1px solid #374151;">
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Financial Modeling</h3>
+          <p class="text-sm mb-4" style="color:#A8A29E;">Build professional Excel models used by top-tier analysts.</p>
+          <div class="flex items-center justify-between text-xs" style="color:#A8A29E;">
+            <span>11 modules</span><span class="font-semibold" style="color:#D4A574;">$69</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20" style="background:#262626; border-top:1px solid #374151; border-bottom:1px solid #374151;">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-center" style="color:#D4A574;">Process</p>
+      <h2 class="text-2xl font-bold mb-12 text-center" style="color:#FAFAF9;">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#D4A574; color:#1C1917;">1</div>
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Create an Account</h3>
+          <p class="text-sm" style="color:#A8A29E;">Sign up for free and browse our full course catalog.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#D4A574; color:#1C1917;">2</div>
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Enroll in a Course</h3>
+          <p class="text-sm" style="color:#A8A29E;">Choose from 200+ expert-led courses and enroll instantly.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#D4A574; color:#1C1917;">3</div>
+          <h3 class="font-semibold mb-2" style="color:#FAFAF9;">Earn Your Certificate</h3>
+          <p class="text-sm" style="color:#A8A29E;">Complete the course and receive a verified certificate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-20" style="background:#1C1917;">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div><p class="text-3xl font-bold" style="color:#D4A574;">200+</p><p class="text-sm mt-1" style="color:#A8A29E;">Courses</p></div>
+      <div><p class="text-3xl font-bold" style="color:#D4A574;">50K+</p><p class="text-sm mt-1" style="color:#A8A29E;">Students</p></div>
+      <div><p class="text-3xl font-bold" style="color:#D4A574;">120+</p><p class="text-sm mt-1" style="color:#A8A29E;">Instructors</p></div>
+      <div><p class="text-3xl font-bold" style="color:#D4A574;">40+</p><p class="text-sm mt-1" style="color:#A8A29E;">Countries</p></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20" style="background:#262626; border-top:1px solid #374151; border-bottom:1px solid #374151;">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-center" style="color:#D4A574;">Testimonials</p>
+      <h2 class="text-2xl font-bold mb-10 text-center" style="color:#FAFAF9;">What Our Students Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="rounded-xl p-6" style="background:#1C1917; border:1px solid #374151;">
+          <p class="text-sm leading-relaxed mb-5" style="color:#A8A29E;">"AW Finance completely changed how I approach financial analysis. The courses are practical and directly applicable."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background:#2e2a24; color:#D4A574; border:1px solid #D4A574;">AR</div>
+            <div><p class="text-sm font-semibold" style="color:#FAFAF9;">Abdul Rehman Ch</p><p class="text-xs" style="color:#A8A29E;">Finance Student</p></div>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6" style="background:#1C1917; border:1px solid #374151;">
+          <p class="text-sm leading-relaxed mb-5" style="color:#A8A29E;">"The Financial Modeling course gave me the skills I needed to land my first internship. Highly recommend."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background:#2e2a24; color:#D4A574; border:1px solid #D4A574;">FK</div>
+            <div><p class="text-sm font-semibold" style="color:#FAFAF9;">Fiza Kanwal</p><p class="text-xs" style="color:#A8A29E;">Business Graduate</p></div>
+          </div>
+        </div>
+
+        <div class="rounded-xl p-6" style="background:#1C1917; border:1px solid #374151;">
+          <p class="text-sm leading-relaxed mb-5" style="color:#A8A29E;">"I completed 3 certifications in 2 months. The platform is intuitive and the content is exactly what the industry demands."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background:#2e2a24; color:#D4A574; border:1px solid #D4A574;">AH</div>
+            <div><p class="text-sm font-semibold" style="color:#FAFAF9;">Ahmed Raza Hassan</p><p class="text-xs" style="color:#A8A29E;">Investment Analyst</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-20" style="background:#1C1917;">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-center" style="color:#D4A574;">Pricing</p>
+      <h2 class="text-2xl font-bold mb-10 text-center" style="color:#FAFAF9;">Simple, Transparent Pricing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+        <div class="rounded-xl p-6" style="background:#262626; border:1px solid #374151;">
+          <p class="text-sm mb-1" style="color:#A8A29E;">Starter</p>
+          <p class="text-3xl font-bold mb-4" style="color:#FAFAF9;">Free</p>
+          <ul class="text-sm space-y-2 mb-6" style="color:#A8A29E;">
+            <li>5 free courses</li><li>Community access</li><li>Basic certificates</li>
+          </ul>
+          <a href="signup.html" class="block text-center py-2 rounded-lg text-sm font-medium transition" style="background:#262626; color:#FAFAF9; border:1px solid #D4A574;">Get Started</a>
+        </div>
+
+        <div class="rounded-xl p-6 relative" style="background:#262626; border:2px solid #D4A574;">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 text-xs px-3 py-1 rounded-full font-medium" style="background:#D4A574; color:#1C1917;">Most Popular</span>
+          <p class="text-sm mb-1" style="color:#A8A29E;">Pro</p>
+          <p class="text-3xl font-bold mb-4" style="color:#FAFAF9;">$29<span class="text-base font-normal" style="color:#A8A29E;">/mo</span></p>
+          <ul class="text-sm space-y-2 mb-6" style="color:#A8A29E;">
+            <li>All 200+ courses</li><li>Verified certificates</li><li>Priority support</li>
+          </ul>
+          <a href="signup.html" class="block text-center py-2 rounded-lg text-sm font-medium transition" style="background:#D4A574; color:#1C1917;">Start Free Trial</a>
+        </div>
+
+        <div class="rounded-xl p-6" style="background:#262626; border:1px solid #374151;">
+          <p class="text-sm mb-1" style="color:#A8A29E;">Enterprise</p>
+          <p class="text-3xl font-bold mb-4" style="color:#FAFAF9;">Custom</p>
+          <ul class="text-sm space-y-2 mb-6" style="color:#A8A29E;">
+            <li>Team management</li><li>Custom learning paths</li><li>Dedicated support</li>
+          </ul>
+          <a href="contact.html" class="block text-center py-2 rounded-lg text-sm font-medium transition" style="background:#262626; color:#FAFAF9; border:1px solid #D4A574;">Contact Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20" style="background:#262626; border-top:1px solid #374151;">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-center" style="color:#D4A574;">FAQ</p>
+      <h2 class="text-2xl font-bold mb-10 text-center" style="color:#FAFAF9;">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+
+        <details class="rounded-xl overflow-hidden" style="background:#1C1917; border:1px solid #374151;">
+          <summary class="px-5 py-4 text-sm font-medium cursor-pointer list-none flex justify-between items-center" style="color:#FAFAF9;">
+            Are the certificates recognized by employers?
+            <span style="color:#D4A574;" class="text-lg">+</span>
+          </summary>
+          <p class="px-5 pb-4 text-sm" style="color:#A8A29E;">Yes. Our certificates are recognized by leading financial institutions and Fortune 500 companies worldwide.</p>
+        </details>
+
+        <details class="rounded-xl overflow-hidden" style="background:#1C1917; border:1px solid #374151;">
+          <summary class="px-5 py-4 text-sm font-medium cursor-pointer list-none flex justify-between items-center" style="color:#FAFAF9;">
+            Can I access courses on mobile?
+            <span style="color:#D4A574;" class="text-lg">+</span>
+          </summary>
+          <p class="px-5 pb-4 text-sm" style="color:#A8A29E;">Absolutely. AW Finance is fully responsive and works on all devices including smartphones and tablets.</p>
+        </details>
+
+        <details class="rounded-xl overflow-hidden" style="background:#1C1917; border:1px solid #374151;">
+          <summary class="px-5 py-4 text-sm font-medium cursor-pointer list-none flex justify-between items-center" style="color:#FAFAF9;">
+            Is there a refund policy?
+            <span style="color:#D4A574;" class="text-lg">+</span>
+          </summary>
+          <p class="px-5 pb-4 text-sm" style="color:#A8A29E;">We offer a 30-day money-back guarantee on all paid plans, no questions asked.</p>
+        </details>
+
+        <details class="rounded-xl overflow-hidden" style="background:#1C1917; border:1px solid #374151;">
+          <summary class="px-5 py-4 text-sm font-medium cursor-pointer list-none flex justify-between items-center" style="color:#FAFAF9;">
+            Do I need prior finance knowledge?
+            <span style="color:#D4A574;" class="text-lg">+</span>
+          </summary>
+          <p class="px-5 pb-4 text-sm" style="color:#A8A29E;">No. We have beginner to advanced courses. Each course clearly states the prerequisites.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20" style="background:#D4A574;">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-4" style="color:#1C1917;">Start Learning Today</h2>
+      <p class="text-sm mb-8" style="color:#1C1917; opacity:0.75;">Join over 50,000 professionals advancing their careers with AW Finance.</p>
+      <a href="signup.html" class="px-8 py-3 rounded-lg font-medium text-sm transition" style="background:#1C1917; color:#D4A574;">Create Free Account</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#262626; border-top:1px solid #374151;" class="py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-bold text-lg mb-3" style="color:#D4A574;">AW Finance</p>
+        <p class="text-sm" style="color:#A8A29E;">Professional finance education for the modern workforce.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Company</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Account</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+          <li><a href="signup.html" class="hover:text-white transition">Sign Up</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Legal</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 text-xs text-center" style="border-top:1px solid #374151; color:#A8A29E;">
+      2024 AW Finance. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
