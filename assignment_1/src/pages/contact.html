@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AW Finance - Contact</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body style="background:#1C1917; color:#FAFAF9; font-family:sans-serif;">
+
+  <!-- NAVBAR -->
+  <nav style="background:#262626; border-bottom:1px solid #374151;" class="sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="home.html" style="color:#D4A574;" class="text-lg font-bold tracking-tight">AW Finance</a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="home.html" class="hover:text-white transition" style="color:#A8A29E;">Home</a>
+        <a href="about.html" class="hover:text-white transition" style="color:#A8A29E;">About</a>
+        <a href="contact.html" style="color:#D4A574;" class="font-medium">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="signin.html" class="text-sm transition" style="color:#A8A29E;">Sign In</a>
+        <a href="signup.html" class="text-sm font-medium px-4 py-2 rounded-lg transition" style="background:#D4A574; color:#1C1917;">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section style="background:#262626; border-bottom:1px solid #374151;" class="py-16 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-xs uppercase tracking-widest font-semibold mb-2" style="color:#D4A574;">Contact</p>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color:#FAFAF9;">Get In Touch</h1>
+      <p style="color:#A8A29E;">Have a question or want to learn more? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS (Flowbite Cards) -->
+  <section class="py-12" style="background:#1C1917; border-bottom:1px solid #374151;">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="block p-6 rounded-xl text-center" style="background:#262626; border:1px solid #374151;">
+        <h5 class="mb-1 text-sm font-semibold" style="color:#FAFAF9;">Email</h5>
+        <p class="text-sm" style="color:#A8A29E;">support@awfinance.com</p>
+      </div>
+
+      <div class="block p-6 rounded-xl text-center" style="background:#262626; border:1px solid #374151;">
+        <h5 class="mb-1 text-sm font-semibold" style="color:#FAFAF9;">Phone</h5>
+        <p class="text-sm" style="color:#A8A29E;">+1 (800) 123-4567</p>
+      </div>
+
+      <div class="block p-6 rounded-xl text-center" style="background:#262626; border:1px solid #374151;">
+        <h5 class="mb-1 text-sm font-semibold" style="color:#FAFAF9;">Office</h5>
+        <p class="text-sm" style="color:#A8A29E;">123 Finance St, New York, NY</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT FORM (Flowbite Form) -->
+  <section class="py-20" style="background:#1C1917;">
+    <div class="max-w-2xl mx-auto px-6">
+
+      <div class="block p-8 rounded-2xl" style="background:#262626; border:1px solid #374151;">
+        <h2 class="text-xl font-bold mb-1" style="color:#FAFAF9;">Send Us a Message</h2>
+        <p class="text-sm mb-6" style="color:#A8A29E;">Fill out the form and we'll get back to you within 24 hours.</p>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+            <!-- Flowbite Input -->
+            <div>
+              <label for="firstName" class="block mb-1 text-sm font-medium" style="color:#A8A29E;">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required
+                class="border text-sm rounded-lg block w-full p-2.5 focus:ring-2"
+                style="background:#1C1917; border-color:#374151; color:#FAFAF9; outline:none;"
+                onfocus="this.style.borderColor='#D4A574'" onblur="this.style.borderColor='#374151'" />
+            </div>
+            <!-- Flowbite Input -->
+            <div>
+              <label for="lastName" class="block mb-1 text-sm font-medium" style="color:#A8A29E;">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required
+                class="border text-sm rounded-lg block w-full p-2.5"
+                style="background:#1C1917; border-color:#374151; color:#FAFAF9; outline:none;"
+                onfocus="this.style.borderColor='#D4A574'" onblur="this.style.borderColor='#374151'" />
+            </div>
+          </div>
+
+          <!-- Flowbite Input -->
+          <div class="mb-5">
+            <label for="email" class="block mb-1 text-sm font-medium" style="color:#A8A29E;">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required
+              class="border text-sm rounded-lg block w-full p-2.5"
+              style="background:#1C1917; border-color:#374151; color:#FAFAF9; outline:none;"
+              onfocus="this.style.borderColor='#D4A574'" onblur="this.style.borderColor='#374151'" />
+          </div>
+
+          <!-- Flowbite Select -->
+          <div class="mb-5">
+            <label for="subject" class="block mb-1 text-sm font-medium" style="color:#A8A29E;">Subject</label>
+            <select id="subject" name="subject" required
+              class="border text-sm rounded-lg block w-full p-2.5"
+              style="background:#1C1917; border-color:#374151; color:#FAFAF9; outline:none;"
+              onfocus="this.style.borderColor='#D4A574'" onblur="this.style.borderColor='#374151'">
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="courses">Course Information</option>
+              <option value="billing">Billing &amp; Payments</option>
+              <option value="enterprise">Enterprise Plans</option>
+              <option value="technical">Technical Support</option>
+            </select>
+          </div>
+
+          <!-- Flowbite Textarea -->
+          <div class="mb-6">
+            <label for="message" class="block mb-1 text-sm font-medium" style="color:#A8A29E;">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10"
+              class="border text-sm rounded-lg block w-full p-2.5 resize-none"
+              style="background:#1C1917; border-color:#374151; color:#FAFAF9; outline:none;"
+              onfocus="this.style.borderColor='#D4A574'" onblur="this.style.borderColor='#374151'"></textarea>
+          </div>
+
+          <!-- Flowbite Button -->
+          <button type="submit"
+            class="w-full font-medium rounded-lg text-sm px-5 py-3 text-center transition"
+            style="background:#D4A574; color:#1C1917;"
+            onmouseover="this.style.background='#c49460'" onmouseout="this.style.background='#D4A574'">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#262626; border-top:1px solid #374151;" class="py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-bold text-lg mb-3" style="color:#D4A574;">AW Finance</p>
+        <p class="text-sm" style="color:#A8A29E;">Professional finance education for the modern workforce.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Company</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Account</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+          <li><a href="signup.html" class="hover:text-white transition">Sign Up</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-sm mb-3" style="color:#FAFAF9;">Legal</p>
+        <ul class="space-y-2 text-sm" style="color:#A8A29E;">
+          <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 text-xs text-center" style="border-top:1px solid #374151; color:#A8A29E;">
+      2024 AW Finance. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
