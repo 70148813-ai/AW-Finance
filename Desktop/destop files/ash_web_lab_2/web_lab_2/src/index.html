@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>AW Academy - Learn Web Development</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'dark-bg': '#1C1917',
+ 'dark-card': '#262626',
+ 'gold': '#D4A574',
+ 'light-text': '#FAFAF9',
+ 'secondary-text': '#A8A29E'
+ }
+ }
+ }
+ }
+ </script>
+</head>
+<body class="bg-dark-bg text-light-text">
+
+ <!-- Navigation Bar -->
+ <nav class="bg-dark-card border-b border-gray-700">
+ <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+ <a href="index.html" class="flex items-center space-x-3">
+ <span class="self-center text-2xl font-semibold text-light-text">AW Academy</span>
+ </a>
+ <div class="flex md:order-2 space-x-3">
+ <a href="./pages/signin.html" class="text-dark-bg bg-gold hover:bg-opacity-90 font-medium rounded-lg text-sm px-4 py-2">Sign In</a>
+ <a href="./pages/signup.html" class="hidden md:block text-light-text bg-dark-card border border-gold hover:bg-opacity-80 font-medium rounded-lg text-sm px-4 py-2">Sign Up</a>
+ <button data-collapse-toggle="navbar-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-secondary-text rounded-lg md:hidden hover:bg-dark-card">
+ <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+ </svg>
+ </button>
+ </div>
+ <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-menu">
+ <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-dark-card md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+ <li><a href="index.html" class="block py-2 px-3 text-gold rounded md:bg-transparent md:p-0">Home</a></li>
+ <li><a href="./pages/about.html" class="block py-2 px-3 text-light-text rounded hover:text-gold md:hover:bg-transparent md:p-0">About</a></li>
+ <li><a href="./pages/contact.html" class="block py-2 px-3 text-light-text rounded hover:text-gold md:hover:bg-transparent md:p-0">Contact</a></li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+ <!-- Hero Section -->
+ <section class="bg-dark-bg">
+ <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 lg:py-16 lg:grid-cols-12">
+ <div class="mr-auto place-self-center lg:col-span-7">
+ <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl text-light-text">Master Web Development Skills Under Guidance of sir salman irfan  </h1>
+ <p class="max-w-2xl mb-6 font-light text-secondary-text lg:mb-8 md:text-lg lg:text-xl">Build modern, responsive websites with HTML, CSS, and Tailwind CSS through hands-on projects.</p>
+ <a href="./pages/signup.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-dark-bg rounded-lg bg-gold hover:bg-opacity-90">
+ Get started
+ <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+ </a>
+ </div>
+ <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+ <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Web Development" class="rounded-lg">
+ </div> 
+ </div>
+ </section>
+
+ <!-- Component 1: Alert -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl mx-auto px-4">
+ <div class="flex p-4 text-sm text-gold rounded-lg bg-dark-bg border border-gold" role="alert">
+ <svg class="flex-shrink-0 inline w-4 h-4 me-3 mt-[2px]" fill="currentColor" viewBox="0 0 20 20">
+ <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+ </svg>
+ <div><span class="font-medium">New Course Available!</span> Enroll in our advanced CSS and Tailwind CSS course starting next month.</div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 2: Feature Cards -->
+ <section class="bg-dark-bg py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Why Choose Us</h2>
+ <div class="grid gap-6 md:grid-cols-3">
+ <div class="p-6 bg-dark-card border border-gray-700 rounded-lg shadow">
+ <h3 class="mb-2 text-2xl font-semibold text-gold">Expert Instructors</h3>
+ <p class="text-secondary-text">Learn from industry professionals with years of experience.</p>
+ </div>
+ <div class="p-6 bg-dark-card border border-gray-700 rounded-lg shadow">
+ <h3 class="mb-2 text-2xl font-semibold text-gold">Hands-On Projects</h3>
+ <p class="text-secondary-text">Build real-world projects for your portfolio.</p>
+ </div>
+ <div class="p-6 bg-dark-card border border-gray-700 rounded-lg shadow">
+ <h3 class="mb-2 text-2xl font-semibold text-gold">Certification</h3>
+ <p class="text-secondary-text">Receive certificates upon course completion.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 3: Image Gallery -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Student Projects</h2>
+ <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop" alt="Project 1">
+ <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=300&fit=crop" alt="Project 2">
+ <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=300&fit=crop" alt="Project 3">
+ <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" alt="Project 4">
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 4: Accordion FAQ -->
+ <section class="bg-dark-bg py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Frequently Asked Questions</h2>
+ <div id="accordion-collapse" data-accordion="collapse">
+ <h2 id="accordion-heading-1">
+ <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-secondary-text border border-b-0 border-gray-700 rounded-t-xl hover:bg-dark-card " data-accordion-target="#accordion-body-1" aria-expanded="true">
+ <span>What prerequisites do I need?</span>
+ <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="none" viewBox="0 0 10 6">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+ </svg>
+ </button>
+ </h2>
+ <div id="accordion-body-1" class="hidden">
+ <div class="p-5 border border-b-0 border-gray-700 bg-dark-bg">
+ <p class="text-secondary-text">No prior experience required. Basic computer skills and enthusiasm to learn are all you need.</p>
+ </div>
+ </div>
+ <h2 id="accordion-heading-2">
+ <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-secondary-text border border-b-0 border-gray-700 hover:bg-dark-card " data-accordion-target="#accordion-body-2" aria-expanded="false">
+ <span>How long does the course take?</span>
+ <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="none" viewBox="0 0 10 6">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+ </svg>
+ </button>
+ </h2>
+ <div id="accordion-body-2" class="hidden">
+ <div class="p-5 border border-gray-700 bg-dark-bg">
+ <p class="text-secondary-text">The course is self-paced and typically takes 8-12 weeks to complete.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 5: Modal -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto text-center">
+ <h2 class="text-3xl font-bold mb-4 text-light-text">Ready to Start Learning?</h2>
+ <button data-modal-target="course-modal" data-modal-toggle="course-modal" class="text-dark-bg bg-gold hover:bg-opacity-90 focus:ring-4 focus:ring-gold focus:ring-opacity-50 font-medium rounded-lg text-sm px-5 py-2.5 " type="button">
+ View Course Details
+ </button>
+ </div>
+ </section>
+
+ <div id="course-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+ <div class="relative p-4 w-full max-w-2xl max-h-full">
+ <div class="relative bg-dark-card rounded-lg shadow border border-gray-700">
+ <div class="flex items-center justify-between p-4 border-b border-gray-700 rounded-t">
+ <h3 class="text-xl font-semibold text-light-text">Web Development Course</h3>
+ <button type="button" class="text-secondary-text bg-transparent hover:bg-gray-700 hover:text-light-text rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center " data-modal-hide="course-modal">
+ <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+ </svg>
+ </button>
+ </div>
+ <div class="p-4 space-y-4">
+ <p class="text-base text-secondary-text">Learn HTML, CSS, and Tailwind CSS from scratch. This comprehensive course covers everything from basic syntax to advanced responsive design.</p>
+ <ul class="space-y-2 text-secondary-text">
+ <li>✓ 50+ hours of video content</li>
+ <li>✓ 10 hands-on projects</li>
+ <li>✓ Lifetime access</li>
+ <li>✓ Certificate of completion</li>
+ </ul>
+ </div>
+ <div class="flex items-center p-4 border-t border-gray-700 rounded-b">
+ <a href="./pages/signup.html" class="text-dark-bg bg-gold hover:bg-opacity-90 focus:ring-4 focus:ring-gold focus:ring-opacity-50 font-medium rounded-lg text-sm px-5 py-2.5">Enroll Now</a>
+ <button data-modal-hide="course-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-light-text bg-dark-bg rounded-lg border border-gray-700 hover:bg-dark-card">Close</button>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Component 6: Tabs -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Course Curriculum</h2>
+ <div class="border-b border-gray-700">
+ <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="course-tabs" data-tabs-toggle="#course-content" role="tablist">
+ <li class="me-2"><button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-secondary-text hover:text-gold hover:border-gold" id="html-tab" data-tabs-target="#html" type="button" role="tab">HTML</button></li>
+ <li class="me-2"><button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-secondary-text hover:text-gold hover:border-gold" id="css-tab" data-tabs-target="#css" type="button" role="tab">CSS</button></li>
+ <li class="me-2"><button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-secondary-text hover:text-gold hover:border-gold" id="tailwind-tab" data-tabs-target="#tailwind" type="button" role="tab">Tailwind</button></li>
+ </ul>
+ </div>
+ <div id="course-content">
+ <div class="hidden p-4 rounded-lg bg-dark-card" id="html" role="tabpanel">
+ <p class="text-sm text-secondary-text">Learn HTML fundamentals including semantic elements, forms, tables, and multimedia integration.</p>
+ </div>
+ <div class="hidden p-4 rounded-lg bg-dark-card" id="css" role="tabpanel">
+ <p class="text-sm text-secondary-text">Explore CSS styling techniques, flexbox, grid layouts, and responsive design principles.</p>
+ </div>
+ <div class="hidden p-4 rounded-lg bg-dark-card" id="tailwind" role="tabpanel">
+ <p class="text-sm text-secondary-text">Master Tailwind CSS utility classes and component design for modern web development.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 7: Badges -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Technologies You'll Learn</h2>
+ <div class="flex flex-wrap justify-center gap-2">
+ <span class="bg-gold bg-opacity-20 text-gold text-sm font-medium px-2.5 py-0.5 rounded">HTML5</span>
+ <span class="bg-gold bg-opacity-30 text-gold text-sm font-medium px-2.5 py-0.5 rounded">CSS3</span>
+ <span class="bg-gold bg-opacity-40 text-gold text-sm font-medium px-2.5 py-0.5 rounded">Tailwind CSS</span>
+ <span class="bg-gold bg-opacity-20 text-gold text-sm font-medium px-2.5 py-0.5 rounded">Flexbox</span>
+ <span class="bg-gold bg-opacity-30 text-gold text-sm font-medium px-2.5 py-0.5 rounded">Grid Layout</span>
+ <span class="bg-gold bg-opacity-40 text-gold text-sm font-medium px-2.5 py-0.5 rounded">Responsive Design</span>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 8: Timeline -->
+ <section class="bg-dark-bg py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Learning Path</h2>
+ <ol class="relative border-s border-gray-700"> 
+ <li class="mb-10 ms-4">
+ <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-1.5 -start-1.5 border border-dark-bg"></div>
+ <time class="mb-1 text-sm font-normal text-secondary-text">Week 1-2</time>
+ <h3 class="text-lg font-semibold text-light-text">HTML Fundamentals</h3>
+ <p class="text-base text-secondary-text">Learn HTML structure and semantic elements.</p>
+ </li>
+ <li class="mb-10 ms-4">
+ <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-1.5 -start-1.5 border border-dark-bg"></div>
+ <time class="mb-1 text-sm font-normal text-secondary-text">Week 3-5</time>
+ <h3 class="text-lg font-semibold text-light-text">CSS Styling</h3>
+ <p class="text-base text-secondary-text">Master CSS selectors, flexbox, and grid layouts.</p>
+ </li>
+ <li class="ms-4">
+ <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-1.5 -start-1.5 border border-dark-bg"></div>
+ <time class="mb-1 text-sm font-normal text-secondary-text">Week 6-8</time>
+ <h3 class="text-lg font-semibold text-light-text">Tailwind CSS</h3>
+ <p class="text-base text-secondary-text">Build responsive interfaces with Tailwind CSS.</p>
+ </li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- Component 9: Popover -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto text-center">
+ <h2 class="text-3xl font-bold mb-4 text-light-text">Need Help?</h2>
+ <button data-popover-target="popover-help" data-popover-placement="bottom" type="button" class="text-dark-bg bg-gold hover:bg-opacity-90 focus:ring-4 focus:ring-gold focus:ring-opacity-50 font-medium rounded-lg text-sm px-5 py-2.5">Support Options</button>
+ <div data-popover id="popover-help" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-secondary-text bg-dark-card border border-gray-700 rounded-lg shadow-sm opacity-0 w-72">
+ <div class="p-3 space-y-2">
+ <h3 class="font-semibold text-light-text">Get Support</h3>
+ <p>Contact us via email, live chat, or schedule a call with our support team.</p>
+ <a href="./pages/contact.html" class="flex items-center font-medium text-gold hover:underline">
+ Contact Support
+ <svg class="w-2 h-2 ms-1.5" fill="none" viewBox="0 0 6 10">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+ </svg>
+ </a>
+ </div>
+ <div data-popper-arrow></div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Component 10: Testimonials -->
+ <section class="bg-dark-card py-8">
+ <div class="max-w-screen-xl px-4 mx-auto">
+ <h2 class="text-3xl font-bold text-center mb-8 text-light-text">Student Success Stories</h2>
+ <div class="grid gap-6 md:grid-cols-3">
+ <figure class="p-6 bg-dark-card border border-gray-700 rounded-lg">
+ <blockquote class="mb-4 text-secondary-text">
+ <p>"This course transformed my career. The hands-on approach made learning enjoyable."</p>
+ </blockquote>
+ <figcaption class="flex items-center">
+ <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile">
+ <div class="ms-3">
+ <div class="font-medium text-light-text">Sarah Johnson</div>
+ <div class="text-sm text-secondary-text">Web Developer</div>
+ </div>
+ </figcaption>
+ </figure>
+ <figure class="p-6 bg-dark-card border border-gray-700 rounded-lg">
+ <blockquote class="mb-4 text-secondary-text">
+ <p>"Excellent instructors and curriculum. I landed my first job within 3 months."</p>
+ </blockquote>
+ <figcaption class="flex items-center">
+ <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile">
+ <div class="ms-3">
+ <div class="font-medium text-light-text">Michael Chen</div>
+ <div class="text-sm text-secondary-text">Frontend Developer</div>
+ </div>
+ </figcaption>
+ </figure>
+ <figure class="p-6 bg-dark-card border border-gray-700 rounded-lg">
+ <blockquote class="mb-4 text-secondary-text">
+ <p>"The project-based learning helped me build a strong portfolio. Highly recommended!"</p>
+ </blockquote>
+ <figcaption class="flex items-center">
+ <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile">
+ <div class="ms-3">
+ <div class="font-medium text-light-text">Emily Rodriguez</div>
+ <div class="text-sm text-secondary-text">UI Designer</div>
+ </div>
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="bg-dark-bg">
+ <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+ <div class="md:flex md:justify-between">
+ <div class="mb-6 md:mb-0">
+ <a href="index.html" class="flex items-center">
+
+ <span class="self-center text-2xl font-semibold">AW Academy</span>
+ </a>
+ </div>
+ <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+ <div>
+ <h2 class="mb-6 text-sm font-semibold text-gold uppercase">Resources</h2>
+ <ul class="text-secondary-text font-medium">
+ <li class="mb-4"><a href="index.html" class="hover:text-gold">Home</a></li>
+ <li><a href="./pages/about.html" class="hover:text-gold">About</a></li>
+ </ul>
+ </div>
+ <div>
+ <h2 class="mb-6 text-sm font-semibold text-gold uppercase">Follow us</h2>
+ <ul class="text-secondary-text font-medium">
+ <li class="mb-4"><a href="#" class="hover:text-gold">Github</a></li>
+ <li><a href="#" class="hover:text-gold">LinkedIn</a></li>
+ </ul>
+ </div>
+ <div>
+ <h2 class="mb-6 text-sm font-semibold text-gold uppercase">Legal</h2>
+ <ul class="text-secondary-text font-medium">
+ <li class="mb-4"><a href="#" class="hover:text-gold">Privacy Policy</a></li>
+ <li><a href="#" class="hover:text-gold">Terms</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <hr class="my-6 border-gray-700 lg:my-8" />
+ <div class="sm:flex sm:items-center sm:justify-between">
+ <span class="text-sm text-secondary-text sm:text-center">© 2024 <a href="index.html" class="hover:text-gold">AW Academy™</a>. All Rights Reserved.</span>
+ </div>
+ </div>
+ </footer>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
