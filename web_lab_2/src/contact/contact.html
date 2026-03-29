@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module">
+    import { initTheme } from '../utils/theme.js';
+    initTheme();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW Finance - Contact</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23D4A574'/></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header id="navbar"></header>
+
+  <main>
+    <section class="section-bg py-16 text-center">
+      <div class="max-w-3xl mx-auto px-6">
+        <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-accent">Contact</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h1>
+        <p class="text-secondary">Have a question or want to learn more? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="card rounded-xl p-6 text-center">
+          <h5 class="mb-1 text-sm font-semibold">Email</h5>
+          <p class="text-sm text-secondary">support@awfinance.com</p>
+        </article>
+        <article class="card rounded-xl p-6 text-center">
+          <h5 class="mb-1 text-sm font-semibold">Phone</h5>
+          <p class="text-sm text-secondary">+1 (800) 123-4567</p>
+        </article>
+        <article class="card rounded-xl p-6 text-center">
+          <h5 class="mb-1 text-sm font-semibold">Office</h5>
+          <p class="text-sm text-secondary">123 Finance St, New York, NY</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="card rounded-xl p-8">
+          <h2 class="text-xl font-bold mb-1">Send Us a Message</h2>
+          <p class="text-sm mb-6 text-secondary">Fill out the form and we'll get back to you within 24 hours.</p>
+
+          <form action="#" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="firstName" class="block mb-1 text-sm font-medium text-secondary">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required class="w-full px-4 py-2 rounded-lg">
+              </div>
+              <div>
+                <label for="lastName" class="block mb-1 text-sm font-medium text-secondary">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required class="w-full px-4 py-2 rounded-lg">
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block mb-1 text-sm font-medium text-secondary">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required class="w-full px-4 py-2 rounded-lg">
+            </div>
+
+            <div>
+              <label for="subject" class="block mb-1 text-sm font-medium text-secondary">Subject</label>
+              <select id="subject" name="subject" required class="w-full px-4 py-2 rounded-lg">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="courses">Course Information</option>
+                <option value="billing">Billing & Payments</option>
+                <option value="enterprise">Enterprise Plans</option>
+                <option value="technical">Technical Support</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block mb-1 text-sm font-medium text-secondary">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10" class="w-full px-4 py-2 rounded-lg"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary w-full px-6 py-3 rounded-lg font-medium">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { initShared } from '../utils/shared.js';
+    initShared();
+  </script>
+</body>
+</html>

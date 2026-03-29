@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module">
+    import { initTheme } from '../utils/theme.js';
+    initTheme();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW Finance - Home</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23D4A574'/></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header id="navbar"></header>
+
+  <main>
+    <section class="section-bg py-24">
+      <article class="max-w-6xl mx-auto px-6 text-center">
+        <span class="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full text-accent border border-color">
+          Trusted by 50,000+ learners
+        </span>
+        <h1 class="mt-6 text-4xl md:text-5xl font-bold leading-tight">Master Finance Skills Online</h1>
+        <p class="mt-4 text-lg max-w-xl mx-auto text-secondary">Expert-led courses in investment banking, financial analysis, and more. Learn at your own pace.</p>
+        <nav class="mt-8 flex justify-center gap-4 flex-wrap">
+          <a href="../signup/signup.html" class="btn-primary px-6 py-3 rounded-lg font-medium">Get Started Free</a>
+          <a href="../about/about.html" class="btn-secondary px-6 py-3 rounded-lg font-medium">Learn More</a>
+        </nav>
+      </article>
+    </section>
+
+    <section class="py-20">
+      <article class="max-w-6xl mx-auto px-6">
+        <header>
+          <p class="text-xs uppercase tracking-widest font-semibold mb-2 text-accent">Courses</p>
+          <h2 class="text-2xl font-bold mb-10">Most Popular Courses</h2>
+        </header>
+        <aside class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="card rounded-xl p-6">
+            <h3 class="font-semibold mb-2">Financial Analysis</h3>
+            <p class="text-sm mb-4 text-secondary">Analyze financial statements and make data-driven decisions.</p>
+            <footer class="flex items-center justify-between text-xs text-secondary">
+              <span>8 modules</span><span class="font-semibold text-accent">$39</span>
+            </footer>
+          </article>
+          <article class="card rounded-xl p-6">
+            <h3 class="font-semibold mb-2">Investment Banking</h3>
+            <p class="text-sm mb-4 text-secondary">Master valuation, M&A, and capital markets from industry veterans.</p>
+            <footer class="flex items-center justify-between text-xs text-secondary">
+              <span>14 modules</span><span class="font-semibold text-accent">$79</span>
+            </footer>
+          </article>
+          <article class="card rounded-xl p-6">
+            <h3 class="font-semibold mb-2">Stock Market Fundamentals</h3>
+            <p class="text-sm mb-4 text-secondary">Understand equities, bonds, and portfolio management strategies.</p>
+            <footer class="flex items-center justify-between text-xs text-secondary">
+              <span>10 modules</span><span class="font-semibold text-accent">$49</span>
+            </footer>
+          </article>
+        </aside>
+      </article>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { initShared } from '../utils/shared.js';
+    initShared();
+  </script>
+</body>
+</html>

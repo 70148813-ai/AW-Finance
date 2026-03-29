@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module">
+    import { initTheme } from './src/utils/theme.js';
+    initTheme();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW Finance - Professional Finance Education</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23D4A574'/></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar"></nav>
+  
+  <main>
+    <section class="section-bg py-24">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <span class="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full text-accent border border-color">
+          Trusted by 50,000+ learners
+        </span>
+        <h1 class="mt-6 text-4xl md:text-5xl font-bold">Master Finance Skills Online</h1>
+        <p class="mt-4 text-lg max-w-xl mx-auto text-secondary">
+          Expert-led courses in investment banking, financial analysis, and more.
+        </p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a href="src/signup/signup.html" class="btn-primary px-6 py-3 rounded-lg font-medium">Get Started Free</a>
+          <a href="src/about/about.html" class="btn-secondary px-6 py-3 rounded-lg font-medium">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">Browse Courses</h2>
+          <button id="admin-toggle" class="btn-primary px-4 py-2 rounded-lg">Admin Panel</button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <input type="text" id="search-input" placeholder="Search courses..." class="px-4 py-2 rounded-lg">
+          <select id="category-filter" class="px-4 py-2 rounded-lg">
+            <option value="all">All Categories</option>
+          </select>
+          <select id="sort-select" class="px-4 py-2 rounded-lg">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="price-asc">Price (Low to High)</option>
+            <option value="price-desc">Price (High to Low)</option>
+          </select>
+        </div>
+
+        <div id="courses-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <section id="admin-panel" class="py-20 section-bg hidden">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
+        
+        <div class="card mb-6">
+          <h3 class="text-lg font-semibold mb-4">Add New Course</h3>
+          <form id="course-form" class="space-y-4">
+            <input type="text" id="course-name" placeholder="Course Name" required class="px-4 py-2 rounded-lg w-full">
+            <input type="text" id="course-category" placeholder="Category" required class="px-4 py-2 rounded-lg w-full">
+            <input type="number" id="course-price" placeholder="Price" required class="px-4 py-2 rounded-lg w-full">
+            <input type="number" id="course-modules" placeholder="Modules" required class="px-4 py-2 rounded-lg w-full">
+            <input type="text" id="course-instructor" placeholder="Instructor" required class="px-4 py-2 rounded-lg w-full">
+            <div id="dynamic-fields"></div>
+            <div class="flex gap-3">
+              <button type="button" id="add-field-btn" class="btn-secondary px-4 py-2 rounded-lg">Add Custom Field</button>
+              <button type="submit" class="btn-primary px-6 py-2 rounded-lg">Create Course</button>
+            </div>
+          </form>
+        </div>
+        
+        <div id="admin-courses-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
